@@ -235,7 +235,7 @@ function removeUserFromScreen(id){
 
 document.getElementById('rzp-button1').onclick = async function (e) {
   const token = localStorage.getItem('token')
- 
+  console.log('rzpbtnclicked');
   const response  = await axios.get('http://localhost:3000/purchase/purchasepremium', { headers: {"Authorization" : token} });
   console.log(response);
 
